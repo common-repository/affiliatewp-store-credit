@@ -1,0 +1,81 @@
+
+/* Fixes issue where <select> is 1px off on screen. */
+select.store-credit-adjustment-movement {
+	position: relative;
+	top: -1px;
+}
+
+.form-table td p.current-balance {
+	font-size: 150%;
+}
+
+.form-table td p.current-balance .balance {
+	font-weight: bold;
+}
+
+p .balance {
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+#store-credit-adjustments-modal p.new-balance {
+	margin-top: 20px;
+	display: none;
+}
+
+#store-credit-adjustments-modal p.new-balance.adjusted {
+	display: block;
+}
+
+#store-credit-adjustments-modal p.new-balance.adjusted .balance {
+	color: #44A2A7;
+}
+
+#store-credit-adjustments-modal p.adjustments {
+	display: flex;
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+#store-credit-adjustments-modal p.adjustments select.store-credit-adjustment-movement {
+	max-width: 180px;
+	min-width: 180px;
+	width: 180px;
+}
+
+#store-credit-adjustments-modal p.adjustments .adjustment-amount-container {
+	max-width: 180px;
+	min-width: 180px;
+	width: 180px;
+	position: relative;
+	top: -1px;
+}
+
+#store-credit-adjustments-modal p.adjustments .adjustment-amount-container {
+	display: flex;
+	padding: 0 5px;
+	align-items: center;
+}
+
+#store-credit-adjustments-modal p.adjustments .adjustment-amount-container .symbol {
+	min-width: 20px;
+	height: 30px;
+	border-top: 1px solid #8D8F94;
+	border-left: 1px solid #8D8F94;
+	border-bottom: 1px solid #8D8F94;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	padding: 2px 8px;
+}
+
+#store-credit-adjustments-modal p.adjustments .adjustment-amount-container input {
+	flex-grow: 1;
+	border-left: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	position: relative;
+	left: -2px;
+}
